@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-color: rgb(0 , 0 , 33); */
+    background-color: rgb(18, 18, 62);
+    /* background: linear-gradient(-225deg, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+    background-position: center;
+    background-repeat: no-repeat; */
+    color: white;
+    font-family: 'Merienda', cursive;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+}
+
+nav ul{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+.left {
+    font-size: 1.5rem;
+}
+
+.right{
+    font-size: 1.1rem;
+}
+
+.right ul li {
+    list-style: none;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 20px 12px;
+    padding: 0 12px;
+    transition: 0.3s;
+}
+
+.right ul li a:hover {
+    color: rgb(72, 72, 113);
+}
+
+.firstSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* resume */
+
+.resume{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    border: 1px solid blueviolet;
+    border-radius: 20px;
+    width: 30%;
+}
+.resume li {
+    list-style: none;
+    margin: 10px;
+}
+.resume li a {
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    padding: 12px 0;
+    transition: 0.3s;
+}
+.resume a  {
+    color: white;
+}
+.resume a:hover {
+    color: rgb(72, 72, 113);
+}
+
+.fa-download { 
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.icon {
+    margin-top: 10px;
+    width:100%;
+    padding: 0 3px;
+}
+
+.icon button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(124, 124, 195);
+    border-radius: 50%;
+    transition: .2s;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.icon button:hover {
+    color: white;
+    transform: translateY(-10px);
+}
+
+.leftSection {
+    width: 35%;
+    font-size: 2.8rem;
+}
+
+
+.rightSection {
+    width: 35%;
+}
+
+.rightSection img {
+    width: 80%;
+    margin: 38px 0;
+}
+
+.purple {
+    color: rgb(170, 107, 228);
+}
+
+/* using typed.js */
+
+#element  {
+    color: rgb(170, 107, 228);
+}
+
+
+
+
+
+
+
+hr{
+    border: 1px solid rgb(124, 124, 195);
+}
+
+footer{
+    margin-top: 15px;
+    
+}
+
+.contact {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 12px 0;
+    padding: 12px 0;
+}
+.footpanel1{
+    background-color: rgb(18, 18, 62);
+    color: white;
+    height: 195px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footpanel1 p {
+    font-size: 1rem;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+ul a {
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 10px;
+    color: #dddddd;
+
+}
+
+ul a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    
+    color: rgb(72, 72, 113);
+}
+.footpanel2 {
+background-color: rgb(18, 18, 62);
+color: white;
+height: 10px;
+text-align: center;
+font-size: 0.7rem;
+}
+.copyright{
+    padding-top: 5px;
+    font-size: 0.9rem;
+}
