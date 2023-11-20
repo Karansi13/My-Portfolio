@@ -3,8 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Karan Singh Kalsi</title>
+    <title>Karan Singh Kalsi | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- aos cdn -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -15,27 +23,38 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav id="navbar">
         <div class="left">Karan's Portfolio</div>
         <div class="right">
+          
+        <div id="menu-btn"><i class="fa-solid fa-bars"></i></div>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">&#60;/Home&#62;</a></li>
+            <li><a href="#">&#60;/About&#62;</a></li>
+            <li><a href="#">&#60;/Projects&#62;</a></li>
+            <li><a href="#">&#60;/Contact&#62;</a></li>
           </ul>
         </div>
       </nav>
+
     </header>
 
     <!-- todo
     have to add linkedin twitter github icons -->
     <main>
-      <section class="firstSection">
+
+      <section class="firstSection" id="home">
+
         <div class="leftSection">
-          Hi, My name is <span class="purple">Karan</span>
-          <div>and I am a</div>
-          <span id="element"></span>
+
+
+          <span id="line">Hey, My name is </span>
+          <br>
+          <span id="name" class="purple">Karan Singh</span>
+          <br>
+          <spaan id="line2">and I am a</span>
+            <br>
+          <span id="work" >Web Developer</span>
 
           <div class="resume">
             <li><a href="resumefile" download="true">Resume</a></li>
@@ -51,20 +70,183 @@
             <button id="twitter"><i class="fa-brands fa-x-twitter"></i></button>
           </div>
         </div>
-        <div class="rightSection">
-          <img src="images/bg2.png" alt="" />
-        </div>
+
+
+         <div class="rightSection"> 
+          <img src="images/bg2.png" alt="img" />
+        </div> 
       </section>
 
-      <section>
-        <div class="about"></div>
-      </section>
+
+      <hr />
+      <!-- About -->
+      <section class="about-section-container" id="about">
+        <div class="about-section">
+            <div class="about-heading"><article class="about-heading-article" tabindex="0"aria-label="About me heading">&#60;/AboutMe&#62;</article><p class="aboutHeadingP"></p></div>
+            
+            <div class="info-dp-section">
+                <div class="about-info">
+                    <p tabindex="0">Hi! My name is Karan i'm a Web Developer and Digital Visual Artist, I love creating things that exists on the internet. My interest in web development started in 2021 when i thought to upload my Digital Concept Arts Online.</p> <br>
+                    <p tabindex="0">Instead of making a online Concepts Art website, i started enjoying web development. Creating custom things for web taught me a lot about design & development! </p> <br>
+                       <p tabindex="0"> My main focus these days is building interesting & creative web designs, I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+
+                </div>
+
+                <div class="dp" data-aos="fade-up"><img src="" alt="Karan Singh" tabindex="0" aria-label="image of karan"></div>
+            </div>
+        </div>
+    </section>
+
+    <hr/>
+
+    <!-- Skills -->
+
+    <section class="skills-section-container" id="skills">
+      <div class="skills-section">
+          <div class="skills-heading" data-aos="fade-up"><article class="skills-heading-article"tabindex="0"aria-label="skills heading">&#60;/Skills&#62;</article><p class="skillsHeadingP"></p></div>
+          
+          <div class="frontend-dev-section">
+
+              <div class="frontend-dev-heading" data-aos="fade-up"tabindex="0"aria-label="As a frontend a developer these are the skills i have">Frontend Developer</div>
+              <div class="language-speak"><article tabindex="0"aria-label="languages i speak below">>_ Languages i speak:</article></div>
+              <div class="languages-section">
+
+                  <div class="language-name"data-aos="fade-up" id="html"><article tabindex="0"aria-label="HTML">H T M L</article>
+                  <p>INTERMEDIATE!</p></div>
+                  
+                  <div class="language-name"data-aos="fade-up" id="css"><article tabindex="0"aria-label="C S S">CSS</article>
+                      <p>ADVANCED!</p></div>
+
+                      <div class="language-name"data-aos="fade-up"id="bootstrap"><article tabindex="0"aria-label="bootstrap">BOOTSTRAP</article>
+                          <p>INTERMEDIATE!</p></div>
+                          <div class="language-name"data-aos="fade-up"id="react"><article tabindex="0"aria-label="React J S">REACT JS</article>
+                              <p>BEGINNER!</p></div>
+                          <div class="language-name"data-aos="fade-up"id="js"><article tabindex="0"aria-label="Javascript">JAVASCRIPT</article>
+                              <p>INTERMEDIATE!</p></div>
+                              
+
+              </div>
+
+          </div>
+          <div class="other-languages frontend-dev-section">
+
+              <div class="languages-heading frontend-dev-heading" data-aos="fade-up"tabindex="0"aria-label="as a programmer skills i have">Programmer</div>
+              <div class="languages-i-know language-speak" data-aos="fade-up"><article>>_ Other Languages i Know:</article></div>
+              <div class="programming-section languages-section">
+
+                  <div class="language-name language-name" data-aos="fade-up" id="c"><article tabindex="0"aria-label="C a programming language">Java</article>
+                  <p>INTERMEDIATE!</p></div>
+                  <div class="language-name language-name" data-aos="fade-up"id="cpp"><article tabindex="0"aria-label="C plus plus a programming language">Python</article>
+                      <p>BEGINNER!</p></div>  
+              </div>
+
+          </div>
+      </div>
+  </section>
+
+<hr/>
+
+<!-- Projects -->
+
+  <section class="projects-section-container" id="projects">
+    <div class="projects-section-div">
+        <div class="projects-heading"><article class="projects-heading-article" tabindex="0"aria-label="My projects starts from here">&#60;/Projects&#62;</article><p class="projectsHeadingP"></p></div>
+        <div class="project-boxes-div">
+
+            <a href="#" target="_blank"><div class="project-box project-box1" id="project-box1">
+            <div class="info-div">
+                <img src="#" alt="" class="faviconforProject">
+                <article class="ProjectHeading">Project1</article>
+                <p class="ProjectDescription">E-commerce website frontend work to choose people their favorite design.</p>
+                <button class="cta">
+                    <span>See the Live Site</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </button>
+            </div>
+            <div class="image-div"><img src="#" alt=""></div>
+        </div></a>
+<!-- ---------------------- -->
+        <a href="#" target="_blank"><div class="project-box project-box2" id="project-box2">
+            <div class="info-div">
+                <img src="#" alt="" class="faviconforProjectAquaregia">
+                <article class="ProjectHeading">Project2</article>
+                <p class="ProjectDescription">A website for University Maharaja College fest "Aquaregia" for event registerations.</p>
+                <button class="cta">
+                    <span>See the Live Site</span>
+                    <svg viewBox="0 0 13 10" height="10px" width="15px">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </button>
+            </div>
+            <div class="image-div"><img src="#" alt=""></div>
+    </div></a>
+
+    <!-- ---------------------- -->
+    <a href="#" target="_blank"><div class="project-box project-box3" id="project-box3">
+        <div class="info-div">
+            <img src="#" alt="" class="faviconforProject">
+            <article class="ProjectHeading">Project3</article>
+            <p class="ProjectDescription">A webpage to categorize the shows to redirect user to watch the show.</p>
+            <button class="cta">
+                <span>See the Live Site</span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+        </div>
+        <div class="image-div"><img src="#" alt=""></div>
+</div></a>
+
+<!-- ---------------------- -->
+<a href="#" target="_blank"><div class="project-box project-box4" id="project-box4">
+    <div class="info-div">
+        <img src="#" alt="" class="faviconforProjectAquaregia">
+        <article class="ProjectHeading">Project4</article>
+        <p class="ProjectDescription">A webpage to make a QR Code from text using API.</p>
+        <button class="cta">
+            <span>See the Live Site</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+    </div>
+    <div class="image-div"><img src="#" alt=""></div>
+</div></a>
+
+<!-- ---------------------- -->
+<a href="#" target="_blank"><div class="project-box project-box5" id="project-box5">
+<div class="info-div">
+    <img src="#" alt="" class="faviconforProjectAquaregia">
+    <article class="ProjectHeading">Project4</article>
+    <p class="ProjectDescription">React based UI of a fast food company webpage.</p>
+    <button class="cta">
+        <span>See the Live Site</span>
+        <svg viewBox="0 0 13 10" height="10px" width="15px">
+          <path d="M1,5 L11,5"></path>
+          <polyline points="8 1 12 5 8 9"></polyline>
+        </svg>
+      </button>
+</div>
+<div class="image-div"><img src="#" alt=""></div>
+</div></a>
+
+</div>
+</div>
+</section>
+
     </main>
 
     <hr />
+    <!-- footer -->
 
     <footer>
-      <div class="contact">Contact Me</div>
+      <div class="projects-heading contactheading"><article class="projects-heading-article" tabindex="0"aria-label="My projects starts from here">&#60;/Connect&#62;</article><p class="projectsHeadingP"></p></div>
       <div class="footpanel1">
         <ul>
           <p>Karan Singh Kalsi</p>
@@ -93,11 +275,12 @@
 
     <!-- Setup and start animation! -->
     <script>
-      var typed = new Typed("#element", {
-        strings: ["Front End Developer", "React Developer"],
-        typeSpeed: 40,
-        loop: Infinity,
-      });
+      // var typed = new Typed("#element", {
+      //   strings: ["Front End Developer", "React Developer"],
+      //   typeSpeed: 40,
+      //   loop: Infinity,
+      // });
     </script>
+    <script src="script.js"></script>
   </body>
 </html>

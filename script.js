@@ -1,3 +1,22 @@
+let menu =  document.querySelector('#menu-btn')
+let navbar = document.querySelector('#navbar')
+
+menu.onclick = () => {
+  menu.classList.toggle('fa-x')
+  menu.classList.remove("fa-bars");
+  menu.classList.remove('fa-bars')
+  
+  console.log('active')
+  navbar.classList.toggle('active')
+}
+
+window.onscroll = () => {
+  menu.classList.remove('fa-times');
+  navbar.classList.remove('active');
+}
+
+
+
 var githubButton = document.getElementById('github');
     var linkedinButton = document.getElementById('linkedin');
     var twitterButton = document.getElementById('twitter');
